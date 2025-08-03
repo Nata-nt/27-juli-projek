@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  animation: fadeIn 3s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0.2; }
+  to   { opacity: 1; }
+}
